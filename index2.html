@@ -4,22 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of Eya Chaieb, Embedded Systems Engineer specializing in IoT, machine learning, and automation." />
+    <meta name="keywords" content="Embedded Systems, IoT, Signal Processing, Robotics, Portfolio" />
+    <meta name="author" content="Eya Chaieb" />
     <title>Eya Chaieb Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   </head>
   <body>
+    <!-- Navbar -->
     <nav id="desktop-nav">
       <div class="logo">Eya Chaieb</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
+
+    <!-- Profile Section -->
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/picture.jpg" alt="Eya Chaieb profile picture" />
@@ -29,195 +34,204 @@
         <h1 class="title">Eya Chaieb</h1>
         <p class="section__text__p2">Embedded Systems Engineer</p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
+          <button class="btn btn-color-2" onclick="window.open('./assets/Eya-Chaieb-resume.pdf')">
             Download CV
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Me</button>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/eya-chaieb-80a455281/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+          <a href="https://linkedin.com/in/eya-chaieb-80a455281/" target="_blank">
+            <i class="fab fa-linkedin icon"></i>
+          </a>
+          <a href="https://github.com/" target="_blank">
+            <i class="fab fa-github icon"></i>
+          </a>
         </div>
       </div>
     </section>
+
+    <!-- About Me Section -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
       <div class="section-container">
         <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-          />
+          <img src="./assets/about-pic.jpg" alt="Profile picture" class="about-pic" />
         </div>
         <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Final year engineering student  <br />Embedded Systems Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Industrial IT and Automation at INSAT</p>
-            </div>
-          </div>
-          <div class="text-container">
+          <div class="details-container">
             <p>
-              Embedded Software engineering student with hands-on experience in signal processing, particularly in automotive 
-              and wireless technologies. I am proficient in C++, MATLAB, LabVIEW, and embedded systems design, with a strong 
-              focus on communication protocols such as LoRa, MQTT, CAN, Ethernet etc... 
-              My projects span from real-time data 
-              acquisition to advanced sensor integration and system control. I have also knowledge in computer vision, ROS, and 
-              automation technologies to develop innovative solutions for diverse industries.
-            </p>
+              I am an Embedded Software Engineering student with expertise in signal processing for automotive and wireless technologies.<br> Proficient in C++, MATLAB, LabVIEW, and Embedded C, I specialize in protocols like LoRa, LoRaWAN, MQTT, CAN, and Ethernet.<br> Skilled in real-time data acquisition, sensor integration, firmware development, and system control, I also have experience with SolidWorks, ARM architecture, FreeRTOS, KiCad, electronics, and Bash scripting, enabling me to design and implement efficient embedded solutions.
+              </p>
+          
           </div>
+       
+          <div class="details-container">
+            <h3>Education</h3>
+            <p>Industrial IT and Automation at INSAT</p>
+          </div>
+
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+    </section>
+
+    <!-- Experience Section -->
+    <section id="Skills">
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="details-container">
+          <h2 class="experience-sub-title"></h2>
+          <article>
+            <i class="fas fa-code icon"></i>
+            <h3>Programming Languages</h3>
+            <p>C++, Embedded C, Python,java</p>
+          </article>
+          <article>
+            <i class="fas fa-microchip icon"></i>
+            <h3>Firmware Development</h3>
+            <p>Experienced in low-level programming and microcontroller such as STM 32 ,ESP and arduino </p>
+          </article>
+          <article>
+            <i class="fas fa-cogs icon"></i>
+            <h3>Control Systems</h3>
+            <p>MATLAB, Simulink, LabVIEW</p>
+            <i class="fas fa-users icon"></i>
+            <h3>others</h3>
+            <p>SolidWorks (design, rendering, simulation),  KiCad, Proteus </p>
+          </article>
+        </div>
+      </div>
     </section>
     <section id="experience">
-      <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">• Skills</h2>
-            <div class="article-container">
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Programming Languages</h3>
-                  <p>C++, Embedded C, Python</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Firmware Development</h3>
-                  <p>Experienced in low-level programming and microcontroller systems</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Embedded Linux</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Mechanical Design</h3>
-                  <p>SolidWorks</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Control Systems</h3>
-                  <p>MATLAB, Simulink, LabVIEW</p>
-                </div>
-              </article>
-              <article>
-                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-                <div>
-                  <h3>Signal and Image Processing</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-            </div>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="slide('experience-carousel', 'prev')">‹</button>
+        <div class="carousel" id="experience-carousel">
+         
+          <div class="carousel-item">
+            <img src="./assets/hydro.jpg" alt="Hydroponic System"  style="width:80%; max-width:200;"/>
+            <h2>Automated hydroponic system for
+              Real-time monitoring and nutrient Management in vertical crops  at ORANGE</h2>
+            <p>
+            
+-Development of C++ drivers for microcontrollers enabling efficient data acquisition 
+via I2C and SPI.<BR> 
+-Optimization of energy consumption by implementing low-power modes and 
+interruptions. <BR> 
+-Development of a master-slave communication architecture for microcontrollers and 
+Raspberry Pi, with implementation of the MQTT protocol. <BR> 
+-Connection to the cloud via AWS IoT Core for communication with the App backend. <BR> 
+-The automation of the addition of new devices process , resulting in a reduction of 
+setup time by over 20 hours per month . <BR> 
+-Design of an online visualization interface for rapid access and real-time monitoring . <BR> 
+-Design and optimization of a vertical hydroponic system .<BR> 
+-Design and manufacture of custom-made PCB enclosures.
+              </p>
+              <a href="https://github.com/ayachaieb/smart-hydroponic-system-project" target="_blank">
+                <img src="./assets/demo-thumbnail.jpg " alt="Demo Video Thumbnail" style="width:100%; max-width:50px; border-radius:8px;">
+              </a>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/emg.jpg" alt="EMG Signal Processing System"  style="width:100%; max-width:700;"/>
+            <h2>IOT developer at HORIZON DATA</h2>
+            <p>
+              -Designed and implemented a system for real-time acquisition of EMG signals using sensors and microcontrollers.<BR> 
+              -Preprocessed raw EMG data through techniques such as filtering, normalization, and feature extraction.<BR> 
+              -Designed and trained machine learning models to predict movement types based on EMG signal patterns.<BR> 
+              -Integrated the machine learning model into the IoT system for real-time movement prediction.<BR> 
+              -Developed firmware to interface the sensors with the microcontroller for efficient data handling.<BR> 
+              -Implemented communication protocols for transmitting EMG data to a central processing unit or cloud server.<BR> 
+              -Controlled servo motors based on the predicted movements, ensuring smooth and accurate actuation.<BR> 
+            </p>
+          </div>
+            <div class="carousel-item">
+            <img src="./assets/bms.jpg" alt="Hydroponic System" style="width:100%; max-width:300;"/>
+            <h2>PCB designer at BAKO Motors </h2>
+            <p>-contributed to the conception of Battery Management Systems (BMS) for electrical 
+              cars to enhance efficiency and performance.<BR>
+               - did research on electromagnetic compatibility of components, particularly while 
+              engaging in the intricate process of designing a printed circuit board (PCB) </p>
           </div>
         </div>
+        <button class="carousel-btn next" onclick="slide('experience-carousel', 'next')">›</button>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
+    
     <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="EMG Signal Processing System"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">EMG Signal Processing System</h2>
-            <p>
-              Developed a real-time electromyography (EMG) signal processing system with movement prediction using machine learning models.
-            </p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-            </div>
+      <div class="carousel-container">
+        <button class="carousel-btn prev" onclick="slide('projects-carousel', 'prev')">‹</button>
+        <div class="carousel" id="projects-carousel">
+          <div class="carousel-item">
+            <img src="./assets/project-1.png" alt="EMG Signal Processing System" />
+            <h2>Deep Learning on STM32F4</h2>
+            <p> Implemented a motion recognition model using STM32Cube.AI with a Nucleo STM32F401RE board and an MMA7600 accelerometer.<br> Tasks included sensor data acquisition, training a neural network with Keras, and deploying it on the STM32 microcontroller​</p>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="IoT-Based Hydroponic System"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">IoT-Based Hydroponic System</h2>
-            <p>
-              Designed and implemented a fully automated hydroponic system with real-time monitoring using LoRa and MQTT for communication.
-            </p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Live Demo</button>
-            </div>
+          <div class="carousel-item">
+            <img src="./assets/project-4.png" alt="EMG Signal Processing System" />
+            <h2>VTOL Prototype Development</h2>
+            <p>Built a vertical take-off and landing (VTOL) system integrating LabVIEW for PID control and TCP/IP communication, NodeMCU for automation, and SolidWorks for 3D design.<br> Tasks included system modeling, brushless motor control, and PCB prototyping with Proteus.</p>
+            <a href="https://www.linkedin.com/posts/ahmed-dhia-labidi_vtol-technology-prototype-ugcPost-7194106121618432002-F8M-?utm_source=share&utm_medium=member_desktop" target="_blank">
+              <img src="./assets/demo-thumbnail.jpg" alt="Demo Video Thumbnail" style="width:100%; max-width:50px; border-radius:8px;">
+            </a>
           </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Control System for Robotics"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Control System for Robotics</h2>
-            <p>
-              Developed a control system for autonomous robots using ROS and integrated sensors for real-time navigation and control.
-            </p>
-            <div class="btn-container">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">Github</button>
-             
+          <div class="carousel-item">
+            <img src="./assets/project-3.png" alt="EMG Signal Processing System" />
+            <h2>central unit PCB Enclosure Design</h2>
+            <p>Designed a central unit's mechanical enclosure using SolidWorks, focusing on heat dissipation, compactness, and durability to protect internal electronics.</p>
+            <video controls width="400">
+              <source src="./assets/demo-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/project-6.png" alt="Hydroponic System" />
+            <h2>Hydroponic System Design </h2>
+            <p> Designed and implemented a hydroponic system to monitor water flow, nutrient concentration (NPK), and electrical conductivity. The project included CAD modeling and IoT integration for remote monitoring.</p>
+            <video controls width="400">
+              <source src="./assets/videodemo.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/project-2.png" alt="EMG Signal Processing System" />
+            <h2>Battery Management System (BMS)</h2>
+            <p>Designed and developed a robust battery management system using STM32 microcontrollers, focusing on charge-discharge cycles, thermal management, and fault detection.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/project-5.png" alt="EMG Signal Processing System" />
+            <h2>Room Box Design</h2>
+            <p>Created a room box prototype for environmental simulation and automation, using 3D design tools and integrating sensors for climate control and monitoring.</p>
+            <video controls width="400">
+              <source src="./assets/room.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/lane-line.png" alt="EMG Signal Processing System" />
+            <h2>Lane Line Detection:</h2>
+            <p> Developed a lane line detection system on Raspberry Pi using OpenCV. The model processed live camera feeds to identify lane markers, enabling navigation tasks in real-time applications.</p>
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/industrie.jpg" alt="EMG Signal Processing System" />
+            <h2>Supply Chain Optimization</h2>
+            <p> Built a predictive decision-making system with LSTM and bi-LSTM architectures to forecast supplier delays. The solution involved Python for modeling and data analysis, significantly improving logistics reliability.</p>
+          </div>
+          <!-- Add more items here -->
+        </div>
+        <button class="carousel-btn next" onclick="slide('projects-carousel', 'next')">›</button>
+      </div>
+      <div id="projects-dots" class="dots-container"></div>
+    </section>
+    
+    <script src="script.js" defer></script>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <form action="mailto:eya.chaieb@insat.ucar.tn" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>
